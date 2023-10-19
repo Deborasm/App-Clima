@@ -1,0 +1,208 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #222;
+        background-image: url(https://source.unsplash.com/1600x900/?landscape);
+    }
+    
+    .card{
+        background: #eaeaeaee;
+        color: #383838;
+        padding: 1em;
+        border-radius: 30px;
+        max-width: 400px; 
+        max-width: 400px;
+        margin: 12px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.39);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(5.5px);
+        border: 1px solid rgba(255, 255, 255, 0.92);
+    
+        
+    }
+    
+    .clima{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+        
+    }
+    
+    .icon{
+        height: 120px;
+        margin-top: 3%;
+        margin-right: 10%;
+    
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(1px 1px 1px rgba(34, 34, 34, 0.151));
+    }
+    
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    button {
+        background-color: #33333354;
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        color: white;
+        margin: 0.5em;
+        cursor: pointer;
+    
+        transition: 0.2s ease-in-out;
+    }
+    
+    button:hover{
+        background-color: #2525252f;
+    }
+    
+    input.search-bar {
+        height: 1.8em;
+        width: calc(100% - 120px);
+        border-radius: 24px;
+        border: none;
+        outline: none;
+        padding: 5px 5px 5px 22px;
+        background-color: #33333354;
+        color: white;
+        font-family: inherit;
+        font-size: 105%;
+    }
+    
+    input.search-bar:hover{
+        background-color:  #2525252f;   
+    }
+    
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(255, 255, 255);
+        opacity: .7; /* Firefox */
+      }
+    
+    .temp{
+        margin: 0;
+        font-size: 400%;
+    }
+    
+    .description{
+        text-transform: capitalize;
+        margin-top: -3%;
+        margin-bottom: auto;
+        text-align: center;
+    }
+    
+    .city-description{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .city-description svg{
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 1%;
+    }
+    
+    .city{
+        font-family: 'Open Sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 90%;
+        font-weight: 900;
+    
+    }
+    
+    .weather.loading{
+        visibility: hidden;
+        max-height: 20px;
+        position: relative;
+    }
+    
+    .weather.loading::after{
+        visibility: visible;
+        content: "Loading...";
+        color: whitesmoke;
+        position: absolute;
+        top: 0;
+    }
+    
+    .container{
+        margin: 10px;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly;
+    
+        margin-bottom: 5%;
+    }
+    
+    .humidity-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .humidity-container svg{
+        padding-right: 11px;
+        height: 100%;
+        width: 20px;
+        height: 30px;
+    
+        color: rgb(76, 155, 192);
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(1px 1px 1px rgba(34, 34, 34, 0.151));
+    }
+    
+    .humidity-text{
+        margin-top: -3px;
+        font-size: 90%;
+    }
+    
+    .humidity{
+        font-size: 150%;
+        font-weight: bold;
+    }
+    
+    .wind-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    
+    .wind-container svg{
+        padding-right: 11px;
+        height: 100%;
+        width: 40px;
+        height: 30px;
+        
+    
+        color: rgb(97, 175, 248);
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(1px 1px 1px rgba(34, 34, 34, 0.151));
+    }
+    
+    .wind-text{
+        margin-top: -3px;
+        font-size: 90%;
+    }
+    
+    .wind{
+        font-size: 150%;
+        font-weight: bold;
+    }  
+    .icon-desc{
+        text-align: center;
+    }
