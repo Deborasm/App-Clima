@@ -8,4 +8,4 @@ O arquivo HTML index.html contém a estrutura básica da página, incluindo elem
 Estilização CSS
 O arquivo CSS style.css define estilos para vários elementos da página, incluindo a aparência do cartão de exibição do clima, a posição e estilo dos ícones, o estilo do campo de busca e a formatação do texto. Além disso, o CSS fornece uma aparência estilizada geral para a página, incluindo um plano de fundo com uma imagem de paisagem aleatória.
 
-
+https://deborasm.github.io/App-Clima/
